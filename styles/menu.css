@@ -77,3 +77,23 @@ a {
 .deck:active {
     background: #7ac9ff
 }
+
+#popOver {
+    position: absolute;
+    width: 1500px;
+    height: 495px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#popOver img {
+    padding: 2%;
+
+} 
+
+

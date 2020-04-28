@@ -3,7 +3,6 @@
 <head>
 	<title>Memory game - Menu</title>
 	<link rel="stylesheet" type="text/css" href="styles/menu.css">
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 </head>
 <body class="background">
 	<h1 class="titre">Memory game</h1>
@@ -23,7 +22,15 @@
 </div>
 
 <div class="btn deck">
-	<a href="#">Choix du deck</a>
+	<a href="#popOver" onclick="popover()">Choix du deck</a>
+</div>
+
+<div id="popOver" style="display:none;">
+	
+	<img src="assets/dos_carte/dos-hs-xl.png"  onclick="choixDeck1()" class="deckHearthstone img">
+	<img src="assets/dos_carte/dos-pkm-xl.png" onclick="choixDeck2()" class="deckPokemon img">
+	<img src="assets/dos_carte/dos-ygo-xl.png" class="deckYuGiOh img">
+	
 </div>
 
 <div class="btn play">
@@ -33,6 +40,8 @@
 	<p>son <- -></p>
 </div>
 
+<script src="js/choixDeck.js"></script>
+<script src="js/popover.js"></script>
 
 </body>
 </html>
