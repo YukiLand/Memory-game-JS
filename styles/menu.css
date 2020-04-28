@@ -1,0 +1,60 @@
+@font-face {
+    font-family: norwester;
+    src: url(fonts/norwester.otf);
+}
+
+@font-face {
+    font-family: Alatsi;
+    src: url(fonts/Alatsi-Regular.ttf);
+}
+
+.titre {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 80px;
+    font-family: norwester;
+}
+
+.background {
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(45,63,253,1) 100%);
+}
+
+.level {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 30px;
+    font-family: norwester;
+}
+
+.easy {
+    margin: auto;
+    width: 500px;
+    height: 80px;
+    font-size: 60px;;
+    background: rgb(56,156,37);
+    background: linear-gradient(170deg, rgba(56,156,37,0.9444152661064426) 0%, rgba(49,253,45,1) 93%);
+    color: white;
+    text-align: center;
+    font-family: Alatsi;
+}
+
+.hard {
+    margin: auto;
+    width: 500px;
+    height: 80px;
+    font-size: 60px;;
+    background-color: green;
+    text-align: center;
+    font-family: Alatsi;
+}
+
+.infinity {
+    margin: auto;
+    width: 500px;
+    height: 80px;
+    font-size: 60px;;
+    background-color: green;
+    text-align: center;
+    font-family: Alatsi;
+}
