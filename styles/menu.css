@@ -8,16 +8,17 @@
     src: url(Alatsi-Regular.ttf);
 }
 
-.titre {
-    text-align: center;
+h1 {
     margin-top: 1em;
     font-size: 80px;
-    font-family: norwester;
 }
 
-.background {
+body {
     background: rgb(34,193,195);
     background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(45,63,253,1) 100%);
+    font-size: 30px;
+    font-family: norwester;
+    text-align: center;
 }
 
 .level {
@@ -27,45 +28,31 @@
     font-family: norwester;
 }
 
-.easy {
+.btn {
     margin: auto;
     margin-bottom: 1em;
     width: 400px;
     height: 70px;
-    font-size: 50px;;
-    background: rgb(227,254,0);
-    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(13,182,0,1) 0%);
+    font-size: 50px;
     color: white;
     text-align: center;
     font-family: Alatsi;
     border-radius: 40px;
 }
 
+.easy {
+    background: rgb(227,254,0);
+    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(13,182,0,1) 0%);
+}
+
 .hard {
-    margin: auto;
-    margin-bottom: 1em;
-    width: 400px;
-    height: 70px;
-    font-size: 50px;
     background: rgb(227,254,0);
     background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(251,139,0,1) 0%);
-    text-align: center;
-    font-family: Alatsi;
-    border-radius: 40px;
 }
 
 .infinity {
-    margin: auto;
-    margin-bottom: 1em;
-    width: 400px;
-    height: 70px;
-    font-size: 50px;
     background: rgb(99,7,7);
     background: linear-gradient(170deg, rgba(99,7,7,0.9444152661064426) 0%, rgba(201,20,20,1) 0%);
-    text-align: center;
-    font-family: Alatsi;
-    border-radius: 40px;
-    
 }
 
 a {
@@ -80,5 +67,5 @@ a {
 }
 
 .sound {
-    text-align: center;z
+    text-align: center;
 }
