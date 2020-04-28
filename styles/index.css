@@ -13,9 +13,12 @@ body {
 }
 
 .paquet {
-    width: 500px;
-    height: 500px;
-    background: red;
+    width: 800px;
+    height: 800px;
+    background: green;
+    border: solid 15px;
+    border-color: brown;
+    border-radius: 20px;
     padding: 50px;
     display:flex;
     flex-wrap: wrap;
@@ -24,3 +27,13 @@ body {
     margin: 0 0 3em;
 }
 
+.paquet .carte {
+    height: 150px;
+    width: 115px;
+    display: flex;
+    color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url(../assets/dos_carte/dos-pk.png);
+}
