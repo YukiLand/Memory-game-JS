@@ -24,7 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 3em;
+    margin: 0 0 15px;
 }
 
 .paquet .carte {
@@ -36,4 +36,27 @@ body {
     align-items: center;
     border-radius: 10px;
     background-image: url(../assets/dos_carte/dos-pk.png);
+}
+
+.panel {/*
+    width: 800px;
+    height: 50px;
+    background: red;
+    border: solid 15px;
+    border-color: black;
+    border-radius: 20px;*/
+
+}
+
+.panel .panul{
+    width: 800px;
+    height: 50px;
+    background: red;
+    border: solid 15px;
+    border-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
