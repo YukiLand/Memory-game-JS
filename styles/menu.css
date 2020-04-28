@@ -9,7 +9,6 @@
 }
 
 h1 {
-    margin-top: 1em;
     font-size: 80px;
 }
 
@@ -23,17 +22,16 @@ body {
 
 .level {
     text-align: center;
-    margin-top: 1em;
     font-size: 30px;
     font-family: norwester;
 }
 
 .btn {
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     width: 400px;
-    height: 70px;
-    font-size: 50px;
+    height: 65px;
+    font-size: 45px;
     color: white;
     text-align: center;
     font-family: Alatsi;
@@ -55,6 +53,16 @@ body {
     background: linear-gradient(170deg, rgba(99,7,7,0.9444152661064426) 0%, rgba(201,20,20,1) 0%);
 }
 
+.deck {
+    background: rgb(227,254,0);
+    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(0,129,255,1) 0%);
+}
+
+.play {
+    background: rgb(227,254,0);
+    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(0,0,0,1) 0%);
+}
+
 a {
     text-decoration: none;
     color: #e3e3e3;
@@ -66,6 +74,6 @@ a {
     background: #7ac9ff
 }
 
-.sound {
-    text-align: center;
+.deck:active {
+    background: #7ac9ff
 }
