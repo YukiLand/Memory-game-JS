@@ -1,11 +1,11 @@
 @font-face {
     font-family: norwester;
-    src: url(fonts/norwester.otf);
+    src: url(norwester.otf);
 }
 
 @font-face {
     font-family: Alatsi;
-    src: url(fonts/Alatsi-Regular.ttf);
+    src: url(Alatsi-Regular.ttf);
 }
 
 .titre {
@@ -29,32 +29,56 @@
 
 .easy {
     margin: auto;
-    width: 500px;
-    height: 80px;
-    font-size: 60px;;
-    background: rgb(56,156,37);
-    background: linear-gradient(170deg, rgba(56,156,37,0.9444152661064426) 0%, rgba(49,253,45,1) 93%);
+    margin-bottom: 1em;
+    width: 400px;
+    height: 70px;
+    font-size: 50px;;
+    background: rgb(227,254,0);
+    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(13,182,0,1) 0%);
     color: white;
     text-align: center;
     font-family: Alatsi;
+    border-radius: 40px;
 }
 
 .hard {
     margin: auto;
-    width: 500px;
-    height: 80px;
-    font-size: 60px;;
-    background-color: green;
+    margin-bottom: 1em;
+    width: 400px;
+    height: 70px;
+    font-size: 50px;
+    background: rgb(227,254,0);
+    background: linear-gradient(170deg, rgba(227,254,0,0.9444152661064426) 0%, rgba(251,139,0,1) 0%);
     text-align: center;
     font-family: Alatsi;
+    border-radius: 40px;
 }
 
 .infinity {
     margin: auto;
-    width: 500px;
-    height: 80px;
-    font-size: 60px;;
-    background-color: green;
+    margin-bottom: 1em;
+    width: 400px;
+    height: 70px;
+    font-size: 50px;
+    background: rgb(99,7,7);
+    background: linear-gradient(170deg, rgba(99,7,7,0.9444152661064426) 0%, rgba(201,20,20,1) 0%);
     text-align: center;
     font-family: Alatsi;
+    border-radius: 40px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #e3e3e3;
+    vertical-align: middle;
+}
+
+.cadreNiveau:hover {
+    width: 450px;
+    background: #7ac9ff
+}
+
+.sound {
+    text-align: center;z
 }
