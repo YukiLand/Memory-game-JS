@@ -202,10 +202,67 @@ body {
     text-align: center;
 }
 
-/* .modal .close {
+.endMenu {
+    position: fixed;
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.endModal {
+    margin: 72px auto;
+    padding: 21px;
+    padding-top: 0px;
+    height: 300px;
+    top: 30%;
+    background: black;
+    border: solid 5px white;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.endModal .close {
     position: absolute;
     top: 21px;
     right: 32px;
     transition: all 200ms;
+    font-size: 32px;
+    font-weight: bold;
     text-decoration: none;
-} */
+    color: #333;
+}
+
+.show-end {
+    visibility: visible;
+    opacity: 100;
+}
+
+.endMenu h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Premier2019';
+    text-align: center;
+}
+
+.endMenu .endModal .stats {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Premier2019';
+}
+
+.endMenu .endModal img {
+    display: inline-block;
+    margin-left: 45%;
+    margin-right: 55%;
+    text-align: center;
+    cursor: pointer;
+}

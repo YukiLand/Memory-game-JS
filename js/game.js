@@ -6,10 +6,12 @@ let bonus = document.querySelector(".bonus");
 let carte = document.getElementsByClassName("carte");
 const cartes = [...carte];
 const deck = document.getElementById("deck-carte");
-let sameCartes = document.getElementsByClassName("same");
+let sameCartes = document.getElementsByClassName("match");
 let closeIcon = document.querySelector(".close");
 let modal = document.getElementById("popup");
+let endModal = document.getElementById('victory');
 var choice = [];
+let countCarte = 0;
 
 function randCartes(array) {
     var index = array.length;
@@ -99,6 +101,7 @@ function flipCarte() {
     }
     if (flips === 2) {
         if (choice[0].type === choice[1].type) {
+            countCarte++;
             countScoreBonus();
             chain = 1;
             same();
@@ -146,7 +149,22 @@ function enable() {
 }
 
 function menuPop() {
-    modal.classList.add("show")
+    modal.classList.add("show");
+}
+
+function closeEnd() {
+    endModal.classList.remove("show-end");
+    start();
+}
+
+function endGame() {
+    if (countCarte == 9) {
+        clearInterval(intervale);
+        finalTime = timer.innerHTML;
+        endModal.classList.add("show-end");
+        document.getElementById("final-score").innerHTML = score;
+        document.getElementById("final-time").innerHTML = finalTime;
+    };
 }
 
 function restart() {
@@ -158,13 +176,5 @@ for (var i = 0; i < cartes.length; i++) {
     carte = cartes[i];
     carte.addEventListener("click", dispCarte);
     carte.addEventListener("click", flipCarte);
+    carte.addEventListener("click", endGame);
 };
-
-let pickDeck = ""
-function pickPk() {
-    for (var i = 0; i < document.getElementsByClassName("png").length; i++) {
-        pickDeck = document.getElementsByClassName("png").item(i);
-        var img = i + 1;
-        pickDeck.innerHtml.getAttribute("src") = "assets/face_carte/pokemon/" + img + ".png";
-    }
-}
