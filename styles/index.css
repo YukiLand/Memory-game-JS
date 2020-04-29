@@ -20,6 +20,16 @@ body {
     flex-direction: column;
 }
 
+.bar-logo {
+    position: absolute;
+    right: 10%;
+}
+
+.bar-logo .logo-menu {
+    height: 70px;
+    width: 70px;
+}
+
 .deck {
     width: 800px;
     height: 800px;
@@ -105,6 +115,7 @@ body {
     border-radius: 10px;
     background: black;
     margin: 0 0 5px;
+    cursor: pointer;
 }
 
 .scoreboard .timer {
@@ -139,3 +150,61 @@ body {
     font-size: 40px;
     font-family: 'Premier2019';
 }
+
+.menu {
+    position: fixed;
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal {
+    margin: 72px auto;
+    padding: 21px;
+    padding-top: 0px;
+    height: 150px;
+    top: 30%;
+    background: black;
+    border: solid 5px white;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.show {
+    visibility: visible;
+    opacity: 100;
+}
+
+.menu h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Premier2019';
+    text-align: center;
+}
+
+.menu-png {
+    display: inline-block;
+    margin: 0 10%;
+    cursor: pointer;
+}
+
+.menu-logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* .modal .close {
+    position: absolute;
+    top: 21px;
+    right: 32px;
+    transition: all 200ms;
+    text-decoration: none;
+} */

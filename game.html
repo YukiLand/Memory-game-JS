@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
     <link href="styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <div class="all">
-        <div class="scoreboard">
+        
+        <div class="scoreboard" onclick="menuPop()">
             <h2 class="timer">39:59</h2>
+        
             <div class="scoring">
                 <p class="score-title">Score</p>
                 <p class="score-title">Bonus</p>
@@ -55,6 +58,17 @@
             <li class="carte" type="salameche">
                 <img class="png" src="assets/face_carte/salameche.png"></li>
         </ul>
+        <div id="popup" class="menu">
+            <div class="modal">
+                <h2>Menu</h2>
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img class="menu-png" src="assets/home.png">
+                    </a>
+                    <img onclick="restart()" class="menu-png" src="assets/restart.png">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/game.js"></script>
 </body>

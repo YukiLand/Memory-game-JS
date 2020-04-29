@@ -8,6 +8,7 @@ const cartes = [...carte];
 const deck = document.getElementById("deck-carte");
 let sameCartes = document.getElementsByClassName("same");
 let closeIcon = document.querySelector(".close");
+let modal = document.getElementById("popup");
 var choice = [];
 
 function randCartes(array) {
@@ -144,8 +145,26 @@ function enable() {
     });
 }
 
+function menuPop() {
+    modal.classList.add("show")
+}
+
+function restart() {
+    modal.classList.remove("show");
+    start();
+}
+
 for (var i = 0; i < cartes.length; i++) {
     carte = cartes[i];
     carte.addEventListener("click", dispCarte);
     carte.addEventListener("click", flipCarte);
 };
+
+let pickDeck = ""
+function pickPk() {
+    for (var i = 0; i < document.getElementsByClassName("png").length; i++) {
+        pickDeck = document.getElementsByClassName("png").item(i);
+        var img = i + 1;
+        pickDeck.innerHtml.getAttribute("src") = "assets/face_carte/pokemon/" + img + ".png";
+    }
+}
