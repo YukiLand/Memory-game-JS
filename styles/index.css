@@ -259,10 +259,13 @@ body {
     font-family: 'Premier2019';
 }
 
-.endMenu .endModal img {
+.menu-png-end {
     display: inline-block;
-    margin-left: 45%;
-    margin-right: 55%;
-    text-align: center;
+    margin: 0 10%;
     cursor: pointer;
+}
+
+.menu-logo-end {
+    margin: 0 auto;
+    text-align: center;
 }
