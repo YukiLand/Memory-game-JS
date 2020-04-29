@@ -1,6 +1,7 @@
 let score = 0;
 let count = document.querySelector(".score");
 let mult = 1;
+let chain = 0
 let bonus = document.querySelector(".bonus");
 let carte = document.getElementsByClassName("carte");
 const cartes = [...carte];
@@ -49,10 +50,12 @@ function start() {
 }
 
 function countScoreBonus() {
+    if (chain == 1) {
+        mult++;
+    }
     score += (1 * mult);
-    mult++;
     count.innerHTML = score;
-    bonus.innerHTML = mult;
+    bonus.innerHTML = 'x' + mult;
     if (score == 1) {
         seconde = 0;
         minute = 0;
@@ -89,10 +92,12 @@ function flipCarte() {
     var flips = choice.length;
 
     if (flips === 2) {
-        countScoreBonus();
         if (choice[0].type === choice[1].type) {
+            countScoreBonus();
+            chain = 1;
             same();
         } else {
+            chain = 0;
             notSame();
         }
     }
