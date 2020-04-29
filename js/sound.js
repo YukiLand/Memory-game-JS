@@ -1,21 +1,41 @@
-$("#volume").slider({
-    // ...
-    slide: function(event, ui) {
-      changeSlider(ui.value);
-    }
+const input = document.querySelector("input");
+const label = document.querySelector("label");
+let valeurSon;
+
+input.addEventListener("input", (event) => {
+  const value = Number(input.value) / 100;
+  input.style.setProperty("--thumb-rotate", `${value * 720}deg`);
+  label.innerHTML = Math.round(value * 50);
+  valeurSon = Math.round(value * 50);
 });
 
-// ...
+    let x = document.getElementById("myAudio");
 
-function changeSlider(myVolume) {
-	let volumeThreshold = [15, 30, 45, 60, 70, 80, 96, 101]
-	let volumeClasses = ["v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7"]
-	let classIndex = volumeThreshold.findIndex((threshold) => {return myVolume < threshold});
-	changeClassTo(volumeClasses[classIndex]);
-	setVolume(myVolume / 100);
+
+    function play() {
+        x.play();
 }
 
-function changeClassTo(className) {
-      $('#volume').removeClass();
-      $('#volume').addClass(className);
-}
+    function setVolume() {
+        if (valeurSon >= 40 && valeurSon < 50) {
+            x.volume = 0.8;
+        }
+        else if (valeurSon >= 30 && valeurSon < 40) {
+            x.volume = 0.6;
+        }
+        else if (valeurSon >= 20 && valeurSon < 30) {
+            x.volume = 0.4;
+        }
+        else if (valeurSon >= 10 && valeurSon < 20) {
+            x.volume = 0.2;
+        }
+        else if (valeurSon > 0 && valeurSon < 10) {
+            x.volume = 0.1;
+        }
+        else if (valeurSon < 1) {
+            x.volume = 0;
+        } 
+        else if (valeurSon = 50) {
+            x.volume = 1;
+        }
+    }

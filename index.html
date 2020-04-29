@@ -3,6 +3,7 @@
 <head>
 	<title>Memory game - Menu</title>
 	<link rel="stylesheet" type="text/css" href="styles/menu.css">
+	<link rel="stylesheet" type="text/css" href="styles/slider.css"
 </head>
 <body class="background">
 	<h1 class="titre">Memory game</h1>
@@ -37,11 +38,14 @@
 	<a href="game.html">Jouer</p></a>
 </div>
 
-<article class="mainfeature">
-	<div class="sliderset">
-	  <div class="slider red"></div>
-	</div>
-  </article>
+<audio id="myAudio">
+	<source src="assets/sound/pika.ogg" type="audio/ogg">
+</audio>
+
+<input id="slider" onclick="play(); setVolume();" name="slider" type="range" value=0>
+<label for="slider">0</label>
+
+
 <script src="js/choixDeck.js"></script>
 <script src="js/popover.js"></script>
 <script src="js/sound.js"></script>
