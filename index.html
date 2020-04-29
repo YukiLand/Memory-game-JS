@@ -27,21 +27,24 @@
 
 <div id="popOver" style="display:none;">
 	
-	<img src="assets/dos_carte/dos-hs-xl.png"  onclick="choixDeck1()" class="deckHearthstone img">
+	<img src="assets/dos_carte/dos-hs-xl.png"  onclick="popoverNone()" class="deckHearthstone img">
 	<img src="assets/dos_carte/dos-pkm-xl.png" onclick="choixDeck2()" class="deckPokemon img">
 	<img src="assets/dos_carte/dos-ygo-xl.png" class="deckYuGiOh img">
 	
 </div>
 
 <div class="btn play">
-	<a href="game.html">Jouer</p>
-</div>
-<div class="btn sound">
-	<p>son <- -></p>
+	<a href="game.html">Jouer</p></a>
 </div>
 
+<article class="mainfeature">
+	<div class="sliderset">
+	  <div class="slider red"></div>
+	</div>
+  </article>
 <script src="js/choixDeck.js"></script>
 <script src="js/popover.js"></script>
+<script src="js/sound.js"></script>
 
 </body>
 </html>
