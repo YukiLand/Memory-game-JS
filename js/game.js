@@ -56,29 +56,28 @@ function countScoreBonus() {
     score += (1 * mult);
     count.innerHTML = score;
     bonus.innerHTML = 'x' + mult;
-    if (score == 1) {
-        seconde = 0;
-        minute = 0;
-        timerStart();
-    }
 }
 
 var seconde = 0;
 var minute = 0;
+var time = true;
 var timer = document.querySelector(".timer");
 var intervale;
 
 function timerStart() {
-    intervale = setInterval(clock(), 1000);
-}
-
-function clock() {
-    timer.innerHTML = minute + ':' + seconde;
-    seconde++;;
-    if (seconde == 60) {
-        minute++;
-        seconde = 0;
-    }
+    intervale = setInterval(function(){
+        if (seconde < 10) {
+            timer.innerHTML = minute + ':' + '0' + seconde;
+        } else {
+            timer.innerHTML = minute + ':' + seconde;
+        }
+        
+        seconde++;;
+        if (seconde == 60) {
+            minute++;
+            seconde = 0;
+        }
+    }, 1000);
 }
 
 var dispCarte = function() {
@@ -91,6 +90,12 @@ function flipCarte() {
     choice.push(this);
     var flips = choice.length;
 
+    if (time) {
+        seconde = 0;
+        minute = 0;
+        time = false;
+        timerStart();
+    }
     if (flips === 2) {
         if (choice[0].type === choice[1].type) {
             countScoreBonus();
