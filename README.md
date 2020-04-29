@@ -14,7 +14,7 @@ Pour jouer, cliquer sur une première carte enclenchera le timer pour chronomèt
 Pour retourner au menu principal ou recommencer une nouvelle partie, cliquez sur le panneau de score qui affichera un menu.
 
 # Lancer le jeu
->>> https://yuki-4wge-memory-game.netlify.app >>>
+>>> https://yuki-4wge-memory-game.netlify.app
 
 # Particularité du projet
 - Le jeu mélange aléatoirement les cartes.
