@@ -39,11 +39,64 @@ body {
     height: 150px;
     width: 115px;
     display: flex;
+    font-size: 0;
+    cursor: pointer;
     color: cadetblue;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     background-image: url(../assets/dos_carte/dos-pk.png);
+}
+
+.deck .carte .png {
+    visibility: hidden;
+}
+
+.deck .carte.open {
+    border: solid 2px red;
+    background: #0f6299;
+    cursor: default;
+}
+
+.deck .carte.show {
+    font-size: 33px;
+}
+
+.deck .carte.match {
+    cursor: default;
+    background: #0f6299;
+    font-size: 33px;
+}
+
+.deck .carte.unmatched {
+    background: red;
+    cursor: default;
+}
+
+.deck .carte.open .png{
+    visibility: hidden;
+}
+
+.deck .carte.show .png{
+    font-size: 33px;
+    visibility: visible;
+}
+
+.deck .carte.match .png{
+    cursor: default;
+    visibility: visible;
+    background: #0f6299;
+    font-size: 33px;
+}
+
+.deck .carte.unmatched .png{
+    background: red;
+    visibility: visible;
+    cursor: default;
+}
+
+.deck .carte.disabled {
+    pointer-events: none;
 }
 
 .scoreboard {
