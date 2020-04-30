@@ -26,7 +26,7 @@ body {
     font-family: norwester;
 }
 
-.btn {
+.btn { 
     margin: auto;
     margin-bottom: 0.8em;
     width: 400px;
@@ -71,11 +71,11 @@ div > a {
 
 .cadreNiveau:hover {
     width: 450px;
-    background: #7ac9ff
+    background: #7ac9ff;
 }
 
 .deck:active {
-    background: #7ac9ff
+    background: #7ac9ff;
 }
 
 #popOver {
@@ -95,5 +95,137 @@ div > a {
     padding: 2%;
 
 } 
+div.a {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 1782px;
+    top : 694px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+    
+div.b {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 684px;
+    top : 478px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.c {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 441px;
+    top : 394px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.d {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 1800px;
+    top : 258px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.e {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 90px;
+    top : 25px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.f {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 1553px;
+    top : 100px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.g {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 90px;
+    top : 900px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.h {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 0px;
+    top : 20px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.i {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 990px;
+    top : 200px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.j {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 99px;
+    top : 200px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+div.k {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 1430px;
+    top : 369px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+    
+div.l {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 150px;
+    top : 344px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+    
+div.m {
+    width: 50px;
+    height:50px;
+    position:fixed;
+    left : 1237px;
+    top : 541px;
+    opacity: 0.75;
+    z-index : -1;
+    }
+
+
+
 
 

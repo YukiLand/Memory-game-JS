@@ -2,10 +2,65 @@
 <html>
 <head>
 	<title>Memory game - Menu</title>
+
 	<link rel="stylesheet" type="text/css" href="styles/menu.css">
-	<link rel="stylesheet" type="text/css" href="styles/slider.css"
+	<link rel="stylesheet" type="text/css" href="styles/slider.css">
+	
 </head>
 <body class="background">
+	
+	<div class='a'>
+        <img class="img" src="assets/carte_anim/Ks.png">
+    </div>
+
+    <div class='b'>
+        <img class="img" src="assets/carte_anim/Qh.png">
+    </div>
+
+    <div class='c'>
+        <img class="img" src="assets/carte_anim/Jc.png">
+    </div>
+
+    <div class='d'>
+        <img class="img" src="assets/carte_anim/Ad.png">
+    </div>
+
+    <div class='e'>
+        <img class="img" src="assets/carte_anim/10s.png">
+    </div>
+
+    <div class='f'>
+        <img class="img" src="assets/carte_anim/9h.png">
+    </div>
+
+    <div class='g'>
+        <img class="img" src="assets/carte_anim/8c.png">
+    </div>
+
+    <div class='h'>
+        <img class="img" src="assets/carte_anim/7d.png">
+	</div>
+
+	<div class='i'>
+        <img class="img" src="assets/carte_anim/6s.png">
+	</div>
+
+	<div class='j'>
+        <img class="img" src="assets/carte_anim/5h.png">
+	</div>
+
+	<div class='k'>
+        <img class="img" src="assets/carte_anim/4c.png">
+	</div>
+
+	<div class='l'>
+        <img class="img" src="assets/carte_anim/3d.png">
+	</div>
+
+	<div class='m'>
+        <img class="img" src="assets/carte_anim/2s.png">
+	</div>
+
 	<h1 class="titre">Memory game</h1>
 
 <p class="level">Choisissez votre niveau de difficultee :</p>
@@ -23,7 +78,7 @@
 </div>
 
 <div class="btn deck">
-	<a href="#popOver" onclick="popover()">Choix du deck</a>
+	<a href="#" onclick="popover()">Choix du deck</a>
 </div>
 
 <div id="popOver" style="display:none;">
@@ -45,7 +100,8 @@
 <input id="slider" onclick="play(); setVolume();" name="slider" type="range" value=0>
 <label for="slider">0</label>
 
-
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+<script src="js/random.js"></script>
 <script src="js/choixDeck.js"></script>
 <script src="js/popover.js"></script>
 <script src="js/sound.js"></script>
