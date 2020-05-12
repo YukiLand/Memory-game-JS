@@ -24,5 +24,6 @@ En cours de partie, pour retourner au menu principal ou en recommencer une nouve
 - A la fin, quand toutes les paires sont trouvées, un message de victoire s'affiche affichant le score et le temps de la partie et deux liens renvoyant soit vers le menu principal soit pour recommencer une partie.
 
 # Développeurs
-- Antoine Lecoffre -> https://github.com/YukiLand
 - Henri Chauvac -> https://github.com/4wge
+- Antoine Lecoffre -> https://github.com/YukiLand
+
